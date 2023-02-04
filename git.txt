@@ -1,4 +1,4 @@
-GIT
+GIT COMMANDS
 git remoteadd origin "link to github remote repo1"
 
 git remote rename origin old-origin
