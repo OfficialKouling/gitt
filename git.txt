@@ -1,0 +1,56 @@
+GIT
+git remoteadd origin "link to github remote repo1"
+
+git remote rename origin old-origin
+git remote add origin "link to github remote repo2"
+
+git merge == (copy repo to work repo)
+git fetch == (just copy locally)
+git reflog == (check history rebase, history of links, history of rewriting history)
+rebase == good but only for 1 person, if work more people it's can be a big problem
+git merge == good for many peoples who works on with 1 commit, but it's make more difficult roads between commits, and it's can be problem to read them.
+
+git config --global user.name "Kouling"
+git config --global user.email "OfficialKouling@gmail.com"
+git init .
+git status
+
+git add . == ready files to commit
+git commit -m "Comment for commit"
+git log
+git push
+
+git diff file01 (show difference between files)
+git restore file01 (restore file from git)
+git diff --staged file01 (if it on stage"add")
+git restore --staged file01 (restore from repo staged lvl)
+
+git checkout "id from logs"				(we start watching commits on this comm)	HEAD
+git reset --hard "id from logs"			(reset to commit with log id)
+git reset --hard ORIG_HEAD
+
+git show "id from "git log""
+
+.gitignore == ignores files				(must be created and added to repo)
+	log									(dir or file)
+	*.log								(all files with end ".log")
+.git == packets for git
+
+
+branch master == production == DON'T TOUCH!!, just make new branche.
+git branch DEV
+git checkout DEV
+git merge == compile 2 branches into 1
+git merge DEV
+git branch -d DEV 						(delete DEV branch)
+git checkout -b DEV						(make new branch DEV and go to this branch)
+
+TO MAKE MERGE YOU MUST BE IN BRANCH WHICH YOU WANT TO MAKE MERGE
+
+LOGS ARE CLEANED IN 30 DAYS
+
+ANSIBLE
+---
+
+-  name: Playbook
+   become: yes
